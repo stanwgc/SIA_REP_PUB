@@ -1,0 +1,37 @@
+<html ng-app="TicTacToe">
+<head>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</head>
+<body>
+	<div ng-controller="TicTacToeCtrl as tttCtrl">
+		<button ng-click="tttCtrl.playerConnection()" class="playButton"
+			ng-show="tttCtrl.loading == 2">Play!</button>
+		<div ng-show="tttCtrl.loading == 1">
+			<div class="loading"></div>
+			<h2>Loading...</h2>
+		</div>
+
+		<div ng-show="tttCtrl.loading == 2">
+			<div id="pm"></div>
+			<button ng-click="tttCtrl.getZuege()">Load Fields!</button>
+			<h2>
+				You have <span id="result">180</span> sec to make a move
+			</h2>
+			<h2 ng-show="tttCtrl.pic == 1">Congratulation!</h2>
+			<div class="container">
+			</div>
+			<ul id="game" ng-hide="tttCtrl.pic ==1">
+				<li ng-repeat="i in tttCtrl.fields track by $index"
+					ng-click="tttCtrl.select($index)"
+					ng-class="tttCtrl.getClass($index)"></li>
+			</ul>
+				
+		</div>
+
+	</div>
+</body>

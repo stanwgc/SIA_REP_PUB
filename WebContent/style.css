@@ -1,0 +1,183 @@
+h2, h1, button {
+	font-family: 'Lobster';
+	color: #000000
+}
+
+button {
+	font-size: 20
+}
+
+body {
+	margin-top: 40px;
+	background: rgba(87, 96, 116, 0.11);
+	color: #000000;
+	font-family: Helvetica;
+	font-weight: fantasy;
+	text-align: center;
+	background-image: url("../pics/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+h1 {
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.pone {
+	background-color: blue;
+}
+
+.ptwo {
+	background-color: red;
+}
+
+.fieldDefault {
+	background-color: #FFF;
+}
+
+#game {
+	width: 780px;
+	height: 780px;
+	border: 1px solid rgb(0, 0, 0);
+	margin: 0 auto;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+#game>li {
+	list-style: none;
+	float: left;
+	overflow: hidden;
+	text-decoration: none;
+	width: 260px;
+	height: 260px;
+	border: 1px solid rgba(0, 0, 0, 0.51);
+	cursor: pointer;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 20px;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#game>li:hover {
+	
+}
+
+#game>li:active {
+	width: 260px;
+	height: 260px;
+	border: 0;
+}
+
+.red {
+	color: red;
+}
+
+.blue {
+	color: blue;
+}
+
+.btn_red {
+	background-color: red;
+	color: red;
+	border: 2px solid white;
+}
+
+.btn_blue {
+	background-color: blue;
+	color: blue;
+	border: 2px solid white; /* Green */
+}
+
+.btn_red:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0
+		rgba(0, 0, 0, 0.19);
+}
+
+.btn_blue:hover {
+	box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0
+		rgba(0, 0, 0, 0.19);
+}
+
+.befGa {
+	background-color: rgba(240, 255, 255, 0.48);
+	border-color: azure;
+	margin-left: 22%;
+	margin-right: 22%;
+	border-radius: 60px;
+	padding-bottom: 10px;
+}
+
+.playButton {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -60px 0 0 -60px;
+	background: #00ff00;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	border: 5px solid #000000;
+}
+
+.loading {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -60px 0 0 -60px;
+	background: #000000;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	border: 5px solid #000000;
+}
+
+.loading:after {
+	content: '';
+	background: trasparent;
+	width: 140%;
+	height: 140%;
+	position: absolute;
+	border-radius: 100%;
+	top: -20%;
+	left: -20%;
+	opacity: 1;
+	box-shadow: #ff9300 -4px -5px 3px -3px;
+	animation: rotate 2s infinite linear;
+}
+
+.container {
+	position: fixed;
+	margin-left: 83%;
+	margin-top: 3%;
+	width: 150px;
+	height: 150px;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+p {
+	margin: 0;
+	color: #00CE9B;
+	font-weight: 700;
+}
+
+#result {
+}
+
+#sec {
+}
+
+
+
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+
